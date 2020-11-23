@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 # Iterate over all module folders
 for file in modules/*
 do
