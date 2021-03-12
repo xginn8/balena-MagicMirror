@@ -7,3 +7,4 @@ COPY ./moduleInstall.sh ./
 
 RUN chmod +x ./moduleInstall.sh
 RUN ./moduleInstall.sh
+RUN apt-get update && apt-get install python3

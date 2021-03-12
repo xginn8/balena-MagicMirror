@@ -1,0 +1,10 @@
+FROM balenalib/raspberrypi3-node:14
+
+WORKDIR /usr/src/app
+COPY package*.json tsconfig.json ./
+RUN install_packages python make g++
+RUN mkdir -p ./src
+COPY src ./src
+RUN npm ci && npm run build
+
+CMD ["node", "src/index.js"]

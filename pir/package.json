@@ -1,0 +1,19 @@
+{
+  "name": "pir",
+  "version": "0.0.1",
+  "description": "toggle your HDMI display on an interval with no motion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc ./src/*ts"
+  },
+  "author": "Matthew McGinn <mamcgi@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "onoff": "^6.0.1",
+    "typescript": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.34"
+  }
+}

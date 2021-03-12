@@ -35,19 +35,23 @@ var config = {
         },
         {
             module: "clock",
-            position: "top_left"
+            position: "top_left",
+            config: {
+                timezone: 'America/New_York'
+            }
         },
         {
             module: "calendar",
             header: "",
             position: "top_left",
+            classes: 'known',
             maximumEntries: 5,
             config: {
                 calendars: [
                     {
                         name: "home",
                         symbol: "home",
-                        url: ""
+                        url: "https://calendar.google.com/calendar/ical/ma90rms2b5td4laasp8ro4q080%40group.calendar.google.com/private-20ebd43b53e6d47446f49720d6240e61/basic.ics"
                     }
                 ]
             }
@@ -58,8 +62,8 @@ var config = {
                config: {
                    weatherProvider: "weathergov",
                    css: "NOAA3",
-                   lat: "",
-                   lon: ""
+                   lat: "41.138833",
+                   lon: "-74.669845"
                 }
         }
     ]
